@@ -30,4 +30,4 @@ model = KMeans(n_clusters=k, init="random", n_init=10, max_iter=400)
 bench_k_means(model, "RandomInit KMeans", data)
 
 model = KMeans(n_clusters=k, init="k-means++", n_init=10, max_iter=400)
-bench_k_means(model, "RandomInit KMeans", data)
+bench_k_means(model, "k-means++ init", data)
